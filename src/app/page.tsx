@@ -1,6 +1,7 @@
 
 import Navbar from "./components/home/navbar";
 import ParallaxSection from "./components/parallaxcomp/parallax";
+import Techbelow from "./components/techbelow/techbelow";
 import Technology from "./components/technology/tech";
 import Page from "./projects/page";
 import Link from "next/link";
@@ -34,6 +35,8 @@ export default function Home() {
   <Page/>
   <ParallaxSection/>
   <Technology/>
+  <Techbelow/>
+
   </>
   );
 }

@@ -87,11 +87,10 @@ const Page = () => {
         <Navbar/>
         {/* margin:auto;background:#ffffff;display:block;z-index:1;position:relative */}
         <div className="">
-  
           {/* project main div */}
-            <div className="h-[50vh] pt-16 projectback bg-[#f0f0f0] lg:py-32 md:py-20 sm:py-16 py-16 md:px-40 sm:px-14 px-5">
-               <h1 className="text-5xl font-semibold text-white" data-aos="fade-right"> Design. Develop. Website. Deploy.</h1>
-               <h1 className="mt-3 text-4xl text-white" data-aos="fade-right">Find all my projects here.</h1>
+            <div className="h-[50vh] sm: pt-24 projectback lg:py-32 md:py-20 sm:py-10 py-10 md:px-40 sm:px-14 px-5">
+               <h1 className="md:text-5xl sm:text-3xl text-3xl font-semibold md:text-white sm:text-black text-black" data-aos="fade-right"> Design. Develop. Website. Deploy.</h1>
+               <h1 className="mt-3 md:text-4xl sm:text-2xl text-2xl md:text-white" data-aos="fade-right">Find all my projects here.</h1>
             </div>
             {/* filter project div */}
             <div className="lg:px-20 md:px-10 sm:px-10 px-10">

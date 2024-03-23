@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className={`fixed top-0 left-0 right-0 z-10 "text-black bg-white transition-all duration-500`}>
       {/* main navbar         */}
-      <div className="flex justify-between sm:mt-6 mt-6 md:mt-0 md:px-28 sm:px-10 px-10  items-center h-16">
+      <div className="flex justify-between sm:py-3 py-3 md:mt-0 md:px-28 sm:px-10 px-10  items-center md:h-16 sm:h-14">
 
       <div className="font-extrabold text-2xl leading-none translate-x-0">Ali Burhan</div>
       <div className="sm:block block md:hidden cursor-pointer" onClick={()=>setTogglenav(!toggleNav)}>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       </div>
-      <div className={`absolute ${!toggleNav?"-top-10 transition-all":"top-24 transition-all"} bg-white text-black p-1 sm:block block md:hidden`}>
+      <div className={`absolute ${!toggleNav?"-top-10 transition-all":"top-14 transition-all"} bg-white text-black p-1 sm:block block md:hidden`}>
   <div className="flex gap-4 justify-center w-screen items-center">
           <Link href={'/'} className="text-xs leading-none hover:underline">
             Service
