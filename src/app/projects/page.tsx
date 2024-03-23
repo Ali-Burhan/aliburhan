@@ -101,7 +101,7 @@ const Page = () => {
               </div>
               <div className="flex-2 gap-5 flex">
                 {/* searches */}
-                    <div>
+                    <div className="hidden sm:hidden md:block">
                         <input type="text" onChange={handleSearch} className="border-gray-300 border h-[46px] outline-none px-3 lg:w-96 md:w-72 sm:w-48 w-40"  placeholder="Search" />
                     </div>
                     <div>
