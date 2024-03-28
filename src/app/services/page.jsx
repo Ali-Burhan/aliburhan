@@ -18,7 +18,7 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand's identity and helps you achieve your business objectives.</p>
+          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
           <button className='w-full py-4 bg-white text-blue-700 font-semibold'>VIEW PROJECTS</button>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand's identity and helps you achieve your business objectives.</p>
+          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
           <button className='w-full py-4 bg-white text-green-700 font-semibold'>VIEW PROJECTS</button>
           </div>
         </div>
@@ -50,7 +50,7 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand's identity and helps you achieve your business objectives.</p>
+          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
           <button className='w-full py-4 bg-white text-orange-700 font-semibold'>VIEW PROJECTS</button>
           </div>
         </div>

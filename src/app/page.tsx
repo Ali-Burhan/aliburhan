@@ -40,7 +40,7 @@ export default function Home() {
     />
       </h1>
       <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-3xl tracking-wide leading-relaxed">That listen to your problem</h1>
-      <p className="mt-3 md:text-xl ">I am a Pakistan-Based Graphic Designer & Nextjs Developer Who Works <br /> With Startups &amp; Corporations On Web Design, Branding, And Presentations</p>
+      <p className="mt-3 md:text-xl ">I am a Pakistan-Based Graphic Designer &amp; Nextjs Developer Who Works <br /> With Startups &amp; Corporations On Web Design, Branding, And Presentations</p>
       <div className="mt-5"><Link href={'/projects'} className="flex gap-4 items-center hover:pl-48 transition-all duration-500 cursor-pointer">Start Project <svg className="" width="30" height="30" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
   <path d="M21 12H3"></path>
   <path d="m15 6 6 6-6 6"></path>

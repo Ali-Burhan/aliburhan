@@ -54,7 +54,7 @@ const Page = () => {
                         <p className='text-xs'>Message</p>
                         <textarea name="message" id="message" cols="30" className='w-full p-2 border-2' rows="7" placeholder='Example Text'></textarea>
                 </div>
-            <p className='font-semibold tracking-tight text-sm cursor-pointer flex gap-2 items-center group hover:underline transition-all duration-300'>Submit Form <svg width="30" height="30" className='group-hover:ml-2 transition-all' fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <p className='font-semibold tracking-tight text-sm cursor-pointer flex gap-2 items-center group hover:underline transition-all duration-300'>Submit Form <svg width="30" height="30" className='group-hover:ml-2 transition-all' fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
   <path d="m9 18 6-6-6-6"></path>
 </svg></p>
             </div>
