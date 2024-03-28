@@ -25,10 +25,10 @@ const Technology = () => {
   ]
 
   return (
-    <div className='lg:px-44 md:px-32 sm:px-10 px-10 py-16'>
+    <div className='lg:px-44 md:px-20 sm:px-10 px-10 py-16'>
       <div className='flex gap-4 sm:flex-col flex-col md:flex-row justify-center items-center'>
       {tech.map((ele,index)=>(
-        <div key={index} className='flex flex-col gap-4 lg:w-1/3 md:w-1/2 sm:w-full w-full'>
+        <div key={index} className='flex flex-col gap-4 lg:w-1/3 md:w-1/2 sm:w-full w-full' data-aos="zoom-in">
             <Image src={ele.imgurl} width={70} height={70} alt='bg'/>
             <h1 className='font-semibold text-xl tracking-tighter'>{ele.title}</h1>
             <p>{ele.description}</p>

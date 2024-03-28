@@ -23,7 +23,7 @@ const Techbelow = () => {
                             <p className='text-lg tracking-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iure iste illo modi amet odit nostrum placeat accusamus, quidem ipsa?</p>
                             <p className='font-semibold tracking-tighter hover:underline'>Start Projects</p>
                         </div>
-                        <div className='group-hover:my-5 sm:hidden hidden md:block group-hover:scale-105 transition-all duration-200'>
+                        <div className='group-hover:my-5 sm:hidden hidden md:block group-hover:scale-105 transition-all duration-200' data-aos="zoom-in">
                             <Image src={'/arrow.svg'} width={300} height={300} className='w-full h-full' alt='arrow pic'/>
                         </div>
             </div>

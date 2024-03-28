@@ -39,7 +39,7 @@ const Page = () => {
       title:'Travel Agency Managment',
       category:'Web Development',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/ali.jpg'
+      imageurl:'/projecttravel.jpg'
     },
     {
       id:2,
@@ -53,14 +53,14 @@ const Page = () => {
       title:'Publication Managment',
       category:'Web Development',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/ali.jpg'
+      imageurl:'/projectpublication.jpg'
     },
     {
       id:4,
       title:'Burhan Dev',
       category:'Web Development',
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/ali.jpg'
+      imageurl:'/projectdev.jpg'
     },
     {
       id:5,
