@@ -7,19 +7,19 @@ const Technology = () => {
     {
       id:1,
       title:"Web Development",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus, officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
       imgurl:"/tech1.svg"
     },
     {
       id:2,
       title:"App Development",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus, officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
       imgurl:"/tech2.svg"
     },
     {
       id:3,
       title:"Data Scientist",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus, officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus officia nostrum culpa veniam nobis exercitationem quod id tempora placeat.",
       imgurl:"/tech3.svg"
     },
   ]

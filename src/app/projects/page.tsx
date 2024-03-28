@@ -38,35 +38,35 @@ const Page = () => {
       id:1,
       title:'Travel Agency Managment',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
       imageurl:'/projecttravel.jpg'
     },
     {
       id:2,
       title:'Personal App',
       category:'App Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
       imageurl:'/ali.jpg'
     },
     {
       id:3,
       title:'Publication Managment',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
       imageurl:'/projectpublication.jpg'
     },
     {
       id:4,
       title:'Burhan Dev',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
       imageurl:'/projectdev.jpg'
     },
     {
       id:5,
       title:'Accounting Solution',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim, dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
+      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
       imageurl:'/ali.jpg'
     },
   ]

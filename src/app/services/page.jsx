@@ -12,7 +12,7 @@ const Page = () => {
         <div className="md:flex-1 flex justify-center">
           <div className='flex flex-col gap-5'>
             <Image src={'/tech2.svg'} height={80} width={80} />
-            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>Web Design & Development</h1>
+            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>Web Design &amp; Development</h1>
             <p className='lg:text-5xl md:text-4xl sm:text-3xl text-3xl text-blue-400'>Create web design that positions your brand strongly</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ const Page = () => {
         <div className="md:flex-1 flex justify-center">
           <div className='flex flex-col gap-5'>
             <Image src={'/tech3.svg'} height={80} width={80} />
-            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>App Design & Development</h1>
+            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>App Design &amp; Development</h1>
             <p className='lg:text-5xl md:text-4xl sm:text-3xl text-3xl text-green-300'>Develop designs that move your business forward</p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Page = () => {
         <div className="md:flex-1 flex justify-center">
           <div className='flex flex-col gap-5'>
             <Image src={'/tech1.svg'} height={80} width={80} />
-            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>Machine Learning & Data Science</h1>
+            <h1 className='text-white lg:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold'>Machine Learning &amp; Data Science</h1>
             <p className='lg:text-5xl md:text-4xl sm:text-3xl text-3xl text-orange-300'>Develop designs that move your business forward</p>
           </div>
         </div>

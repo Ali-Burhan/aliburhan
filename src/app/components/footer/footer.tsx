@@ -10,7 +10,7 @@ const Footer = () => {
             <p className='text-xs text-gray-500 font-semibold'>{new Date().getFullYear()} &copy; All Rights Reserved to Ali Burhan</p>
         </div>
         <div className='flex-1'>
-            <p className='tracking-tight font-sans'>Ali Burhan is a Pakistan-based web designer and Nextjs/Reactjs developer who has been working as a graphic designer for 4 years, building social brands, company profiles, and presentations.</p>
+            <p className='tracking-tight font-sans'>Ali Burhan is a Pakistan-based web designer and Nextjs/Reactjs developer who has been working as a graphic designer for 4 years building social brands, company profiles, and presentations.</p>
         </div>
     </div>
     <hr />
