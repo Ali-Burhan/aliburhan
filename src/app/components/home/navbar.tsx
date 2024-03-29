@@ -30,6 +30,7 @@ const Navbar = () => {
         <p className={`border w-8 mt-2 ${toggleNav && "-rotate-45 -translate-y-[7px] transition-all"}`}></p>
       </div>
       <div className="hidden sm:hidden md:flex">
+
         <div className="flex gap-4 items-center">
           <Link href={'/'} className="text-xs leading-none hover:underline">
             Home
@@ -37,13 +38,13 @@ const Navbar = () => {
           <Link href={'/services'} className="text-xs leading-none hover:underline">
             Service
           </Link>
-          <Link href={'/'} className="text-xs leading-none hover:underline">
+          <Link href={'/about'} className="text-xs leading-none hover:underline">
             About
           </Link>
           <Link href={'/projects'} className="text-xs leading-none  hover:underline">
             Projects
           </Link>
-          <Link href={'/projects'} className="text-xs leading-none border-l border-black px-5 py-1 font-semibold  hover:underline">
+          <Link href={'/contact'} className="text-xs leading-none border-l border-black px-5 py-1 font-semibold  hover:underline">
             Start Project 
           </Link>
         </div>
@@ -57,13 +58,13 @@ const Navbar = () => {
           <Link href={'/services'} className="text-xs leading-none hover:underline">
             Service
           </Link>
-          <Link href={'/'} className="text-xs leading-none hover:underline">
+          <Link href={'/about'} className="text-xs leading-none hover:underline">
             About
           </Link>
           <Link href={'/projects'} className="text-xs leading-none  hover:underline">
             Projects
           </Link>
-          <Link href={'/projects'} className="text-xs leading-none font-semibold  hover:underline">
+          <Link href={'/contact'} className="text-xs leading-none font-semibold  hover:underline">
             Start Project 
           </Link>
         </div>

@@ -5,8 +5,12 @@ const Page = () => {
   return (
     <div className='pt-16'>
       <div className="h-[50vh] lg:py-24 lg:px-44 md:py-20 md:px-20 sm:px-10 px-10 py-10">
-        <h1 className="text-5xl">Explore Services.</h1>
-        <h1 className="text-5xl">Tailored for your needs.</h1>
+        <h1 className="text-5xl" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">Explore Services.</h1>
+        <h1 className="text-5xl"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">Tailored for your needs.</h1>
       </div>
       <div className="h-[100vh] bg-blue-600 flex items-center justify-center sticky top-0 z-0 lg:px-40 lg:gap-10 md:px-20 md:gap-5 gap-5 sm:flex-col md:flex-row sm:px-5 px-5 sm:py-5 flex-col py-5">
         <div className="md:flex-1 flex justify-center">
