@@ -21,7 +21,7 @@ export default function Home() {
 
       <div className="flex justify-center p-10 items-center flex-col flex-1 mx-5 rounded-xl md:hover:opacity-65 transition-all duration-300">
         <div className="">
-      <h1 className="text-4xl leading-10 font-bold ">
+      <h1 className="lg:text-4xl leading-10 font-bold md:text-2xl sm:text-xl text-xl ">
       <TypeAnimation
       className=""
       sequence={[
