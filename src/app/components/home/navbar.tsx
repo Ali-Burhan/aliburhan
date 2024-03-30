@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
       </div>
       </div>
-      <div className={`absolute ${!toggleNav?"-top-96 transition-all":"top-12 transition-all"} text-white p-1 sm:block block md:hidden   bg-red-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100`}>
+      <div className={`absolute ${!toggleNav?"-top-96 transition-all":"top-12 transition-all"} text-white p-1 sm:block block md:idden  bg-orange-500 bg-opacity-50`}>
   <div className="flex flex-col gap-4 justify-center w-screen items-center">
           <Link href={'/'} className="leading-none hover:underline font-bold ">
             Home
