@@ -6,20 +6,13 @@ import AOS from 'aos'
 import "aos/dist/aos.css"
 
 
-interface Item {
-  id: number;
-  title: string;
-  category: string;
-  description: string;
-  imageurl: string;
-}
 const Page = () => {
-  const [filterProjects,setFilterProjects] = useState<Item[]>([])
+  const [filterProjects,setFilterProjects] = useState([])
   useEffect(()=>{
   AOS.init()
   },[])
 
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = (e) => {
     if (e.target.value !== "") {
       setSelectedCategory("")
       setFilterProjects(() =>
@@ -71,9 +64,9 @@ const Page = () => {
     },
   ]
 
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState('');
 
-  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value)
     if(e.target.value !== ""){
       setFilterProjects((pre)=>projects.filter((ele)=>ele.category.toLowerCase().includes(e.target.value.toLowerCase())))
@@ -84,7 +77,6 @@ const Page = () => {
   };
   return (
     <div>
-        <Navbar/>
         {/* margin:auto;background:#ffffff;display:block;z-index:1;position:relative */}
         <div className="">
           {/* project main div */}

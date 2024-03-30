@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex justify-between sm:py-3 py-3 md:mt-0 md:px-28 sm:px-10 px-10  items-center md:h-16 sm:h-14">
 
       <div className="font-extrabold text-2xl leading-none translate-x-0"><Link href={'/'}>Ali Burhan</Link></div>
-      <div className="sm:block block md:hidden cursor-pointer" onClick={()=>setTogglenav(!toggleNav)}>
+      <div className="sm:block block md:hidden cursor-pointer" onClick={()=>setTogglenav((pre)=>!pre)}>
         <p className={`border w-8 ${toggleNav && "rotate-45 translate-y-[3px] transition-all"}`}></p>
         <p className={`border w-8 mt-2 ${toggleNav && "-rotate-45 -translate-y-[7px] transition-all"}`}></p>
       </div>
@@ -50,21 +50,21 @@ const Navbar = () => {
         </div>
       </div>
       </div>
-      <div className={`absolute ${!toggleNav?"-top-10 transition-all":"top-14 transition-all"} bg-white text-black p-1 sm:block block md:hidden`}>
-  <div className="flex gap-4 justify-center w-screen items-center">
-          <Link href={'/'} className="text-xs leading-none hover:underline">
+      <div className={`absolute ${!toggleNav?"-top-96 transition-all":"top-12 transition-all"} text-white p-1 sm:block block md:hidden   bg-red-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100`}>
+  <div className="flex flex-col gap-4 justify-center w-screen items-center">
+          <Link href={'/'} className="leading-none hover:underline font-bold ">
             Home
           </Link>
-          <Link href={'/services'} className="text-xs leading-none hover:underline">
+          <Link href={'/services'} className="font-bold leading-none hover:underline">
             Service
           </Link>
-          <Link href={'/about'} className="text-xs leading-none hover:underline">
+          <Link href={'/about'} className="font-bold leading-none hover:underline">
             About
           </Link>
-          <Link href={'/projects'} className="text-xs leading-none  hover:underline">
+          <Link href={'/projects'} className="font-bold leading-none  hover:underline">
             Projects
           </Link>
-          <Link href={'/contact'} className="text-xs leading-none font-semibold  hover:underline">
+          <Link href={'/contact'} className="font-extrabold leading-none  hover:underline">
             Start Project 
           </Link>
         </div>
