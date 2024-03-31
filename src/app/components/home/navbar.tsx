@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link"
 import { useEffect, useState } from "react"
-
 const Navbar = () => {
   const [toggleNav,setTogglenav] = useState(false)
   const [scrolled,setScrolled] = useState(false)
@@ -31,6 +30,7 @@ const Navbar = () => {
       </div>
       <div className="hidden sm:hidden md:flex">
 
+
         <div className="flex gap-4 items-center">
           <Link href={'/'} className="text-xs leading-none hover:underline">
             Home
@@ -44,13 +44,16 @@ const Navbar = () => {
           <Link href={'/projects'} className="text-xs leading-none  hover:underline">
             Projects
           </Link>
-          <Link href={'/contact'} className="text-xs leading-none border-l border-black px-5 py-1 font-semibold  hover:underline">
-            Start Project 
+          <Link href={'/contact'} className="text-xs leading-none  hover:underline">
+            Contact
+          </Link>
+          <Link href={'/chatbot'} className="text-xs leading-none border-l border-black px-5 py-1 font-semibold  hover:underline">
+            Chat With Bot
           </Link>
         </div>
       </div>
       </div>
-      <div className={`absolute ${!toggleNav?"-top-96 transition-all":"top-12 transition-all"} text-white p-1 sm:block block md:idden  bg-orange-500 bg-opacity-50`}>
+      <div className={`absolute ${!toggleNav?"-top-96 transition-all":"top-12 transition-all"} text-white p-1 sm:block block md:idden bg-black bg-opacity-95`}>
   <div className="flex flex-col gap-4 justify-center w-screen items-center">
           <Link href={'/'} className="leading-none hover:underline font-bold ">
             Home
@@ -64,8 +67,11 @@ const Navbar = () => {
           <Link href={'/projects'} className="font-bold leading-none  hover:underline">
             Projects
           </Link>
-          <Link href={'/contact'} className="font-extrabold leading-none  hover:underline">
-            Start Project 
+          <Link href={'/contact'} className="font-bold leading-none  hover:underline">
+            Contact
+          </Link>
+          <Link href={'/chatbot'} className="font-extrabold leading-none  hover:underline">
+            Chat Bot
           </Link>
         </div>
       </div>

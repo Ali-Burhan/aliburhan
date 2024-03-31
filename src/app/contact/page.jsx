@@ -61,9 +61,8 @@ const Page = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className='lg:basis-1/2 md:basis-2/3 flex flex-col gap-4'>
-
                 {/* input flex div */}
-                <div className='flex gap-2 flex-1'>
+                <div className='flex flex-col sm:flex-row gap-2 flex-1'>
                     <div className='flex flex-col gap-1 flex-1'>
                         <p className='text-xs'>Name*</p>
                         <input type="text" className='border-2 p-2 outline-none w-full' {...register('name')} />
@@ -74,7 +73,7 @@ const Page = () => {
                     </div>
                  
                 </div>
-                <div className='flex gap-2 flex-1'>
+                <div className='flex flex-col sm:flex-row gap-2 flex-1'>
 
                     <div className='flex flex-col gap-1 flex-1'>
                         <p className='text-xs'>Phone Number*</p>
@@ -86,7 +85,7 @@ const Page = () => {
                     </div>
                  
                 </div>
-                <div className='flex gap-2 flex-1'>
+                <div className='flex flex-col sm:flex-row gap-2 flex-1'>
 
                     <div className='flex flex-col gap-1 flex-1'>
 
