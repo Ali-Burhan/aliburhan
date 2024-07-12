@@ -8,6 +8,7 @@ import "aos/dist/aos.css"
 
 const Page = () => {
   const [filterProjects,setFilterProjects] = useState([])
+  const [fetchedProjects,setFetchedProjects] = useState([])
   useEffect(()=>{
   AOS.init()
   },[])
@@ -75,6 +76,19 @@ const Page = () => {
       setFilterProjects(projects)
     }
   };
+
+
+  async function fetchProjects(){
+    const res = await fetch('/api/project')
+    const data = await res.json()
+    setFetchedProjects(data.projects)
+  }
+
+  useEffect(()=>{
+    fetchProjects()
+  },[])
+
+
   return (
     <div>
         {/* margin:auto;background:#ffffff;display:block;z-index:1;position:relative */}
@@ -120,6 +134,10 @@ const Page = () => {
                   <Cards imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
                   ))
               }
+              {fetchedProjects.length > 0 &&
+                fetchedProjects.map((ele,ind)=><Cards key={ind} desc={ele.description} imgurl={ele.image} tag={ele.category} title={ele.title}/>)
+              }
+              
             </div>
         </div>
         </div>
