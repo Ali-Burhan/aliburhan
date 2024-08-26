@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 const Page = () => {
 
   return (
@@ -22,8 +23,8 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
-          <button className='w-full py-4 bg-white text-blue-700 font-semibold'>VIEW PROJECTS</button>
+          <p className='text-white tracking-tight'>As a dedicated freelance web developer, I offer a range of web development services tailored to meet your unique needs. With expertise in front-end and back-end development, I create responsive, user-friendly websites that are not only visually appealing but also optimized for performance. Whether you need a simple landing page or a complex web application, I work closely with you to bring your vision to life, ensuring quality, functionality, and a seamless user experience. Let's collaborate to build a powerful online presence for your business.</p>
+          <Link href={'/projects'} className='w-full py-4 grid place-items-center bg-white text-blue-700 font-semibold'>VIEW PROJECTS</Link>
           </div>
         </div>
       </div>
@@ -38,8 +39,8 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
-          <button className='w-full py-4 bg-white text-green-700 font-semibold'>VIEW PROJECTS</button>
+          <p className='text-white tracking-tight'>As a freelance app developer, I provide professional app development services to help bring your ideas to life. Specializing in both iOS and Android platforms, I create custom, user-friendly mobile applications that are tailored to your specific needs. From concept to deployment, I ensure a smooth development process, focusing on functionality, performance, and a great user experience. Whether you need a simple utility app or a complex, feature-rich application, I am here to deliver high-quality solutions that align with your business goals. Let's work together to build the perfect app for your needs.</p>
+          <Link href={'/projects'} className='w-full py-4 grid place-items-center bg-white text-green-700 font-semibold'>VIEW PROJECTS</Link>
           </div>
         </div>
       </div>
@@ -54,8 +55,8 @@ const Page = () => {
         </div>
         <div className="md:flex-1">
           <div className=' flex flex-col gap-3 justify-end'>
-          <p className='text-white tracking-tight'>I specialize in crafting responsive and visually appealing websites that not only attract visitors but also drive conversions. I leverage the latest technologies to ensure your website stands out in the digital landscape. Work with a web developer in Kuwait that reflects your brand identity and helps you achieve your business objectives.</p>
-          <button className='w-full py-4 bg-white text-orange-700 font-semibold'>VIEW PROJECTS</button>
+          <p className='text-white tracking-tight'>As a freelance machine learning and AI specialist, I offer tailored solutions to help businesses harness the power of artificial intelligence. With expertise in data analysis, predictive modeling, and natural language processing, I create custom AI models and machine learning algorithms that drive insights and automation. Whether you need to build a recommendation system, automate a process, or leverage data for strategic decision-making, I am here to provide cutting-edge solutions that meet your specific requirements. Let's work together to unlock the potential of AI and machine learning for your business.</p>
+          <Link href={'/projects'} className='w-full py-4 grid place-items-center bg-white text-orange-700 font-semibold'>VIEW PROJECTS</Link>
           </div>
         </div>
       </div>

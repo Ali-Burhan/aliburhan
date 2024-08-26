@@ -32,40 +32,38 @@ const Page = () => {
       id:1,
       title:'Travel Agency Managment',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/projecttravel.jpg'
+      description:'Tourism and Hospitality Management is a full-stack application built with Next.js, designed to streamline the management of tourism and hospitality services. This platform allows users to manage bookings, reservations, customer information, and service offerings efficiently. By leveraging modern web technologies, it provides a seamless and user-friendly experience for both service providers and customers in the tourism and hospitality industry.',
+      imageurl:'/projecttravel.jpg',
+      githubLink:'https://github.com/Ali-Burhan/travelagencynext'
     },
     {
       id:2,
       title:'Personal App',
       category:'App Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/ali.jpg'
+      description:'Personal React Native App is a mobile application developed for practice, allowing developers to hone their skills in building cross-platform apps. This project covers essential aspects of React Native, including component design, state management, navigation, and integration with APIs, providing hands-on experience in mobile app development for both iOS and Android platforms.',
+      imageurl:'/ali.jpg',
+      githubLink:'https://github.com/Ali-Burhan/'
     },
     {
       id:3,
       title:'Publication Managment',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/projectpublication.jpg'
+      description:'Publication Management System is a comprehensive platform designed to streamline the process of managing and organizing publications. This system enables users to efficiently handle submissions, peer reviews, editing workflows, and publication distribution. Built with a focus on ease of use and automation, it helps publishers, editors, and authors collaborate seamlessly, ensuring a smooth and efficient publication process from submission to final release.',
+      imageurl:'/projectpublication.jpg',
+      githubLink:'https://github.com/Ali-Burhan/Publications'
     },
     {
       id:4,
-      title:'Burhan Dev',
-      category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/projectdev.jpg'
-    },
-    {
-      id:5,
       title:'Accounting Solution',
       category:'Web Development',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique nihil doloremque inventore in quo voluptates perferendis quasi! Enim dolor. Corrupti omnis consequatur dolor dolore minus enim unde quia assumenda.',
-      imageurl:'/ali.jpg'
+      description:'Accounting Solution Web App is a robust and intuitive platform designed to simplify financial management for businesses of all sizes. This web application offers a range of features, including expense tracking, invoicing, financial reporting, and budget management, all within a user-friendly interface. Built with modern web technologies, it ensures secure data handling and provides real-time insights to help businesses make informed financial decisions and stay on top of their accounting needs.',
+      imageurl:'/ali.jpg',
+      githubLink:'https://github.com/Ali-Burhan/accounting-Solution'
     },
   ]
 
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [loading,setLoading] = useState(false)
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value)
@@ -79,9 +77,11 @@ const Page = () => {
 
 
   async function fetchProjects(){
+    setLoading(true)
     const res = await fetch('/api/project')
     const data = await res.json()
     setFetchedProjects(data.projects)
+    setLoading(false)
   }
 
   useEffect(()=>{
@@ -92,7 +92,7 @@ const Page = () => {
   return (
     <div>
         {/* margin:auto;background:#ffffff;display:block;z-index:1;position:relative */}
-        <div className="">
+        <div className="mb-10">
           {/* project main div */}
             <div className="h-[50vh] sm: pt-24 projectback lg:py-32 md:py-20 sm:py-10 py-10 md:px-40 sm:px-14 px-5">
                <h1 className="md:text-5xl sm:text-3xl text-3xl font-semibold md:text-white sm:text-black text-black" data-aos="fade-right"> Design. Develop. Website. Deploy.</h1>
@@ -129,9 +129,9 @@ const Page = () => {
             </div>
             <div className="flex gap-6 justify-center py-10 flex-wrap">
               { filterProjects.length==0?  projects.map((ele,index)=>(
-                <Cards imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
+                <Cards link={ele.githubLink} imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
                 )):filterProjects.map((ele,index)=>(
-                  <Cards imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
+                  <Cards link={ele.githubLink} imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
                   ))
               }
               {fetchedProjects.length > 0 &&
@@ -139,6 +139,7 @@ const Page = () => {
               }
               
             </div>
+              {loading? <div className="my-10 h-40 loaderproject w-full"></div>:null}
         </div>
         </div>
     </div>
