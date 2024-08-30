@@ -12,7 +12,7 @@ const Page = () => {
                 </div>
             </div>
             <div className='flex-1 sm:hidden md:block hidden'>
-                <Image src={'/ali.jpg'} height={1000} width={1000} className='w-full h-full'/>
+                <Image src={'/ali.jpg'} height={1000} width={1000} className='w-full h-full' alt="alternate pic"/>
             </div>
         </div>
         {/* first section end */}
@@ -21,7 +21,7 @@ const Page = () => {
             <div className='flex flex-col gap-2 w-64 items-center py-4 border px-3 group hover:bg-orange-500 cursor-pointer transition-all duration-200'>
 
                     <div className='rounded-full bg-orange-500 p-2 border border-white'>
-                        <Image src={'/tech1.svg'} height={50} width={50} className='rounded-full'/>
+                        <Image src={'/tech1.svg'} height={50} width={50} className='rounded-full' alt="alternate pic"/>
                     </div>
                     <p className='font-bold  group-hover:text-white'>
                         Machine Learning
@@ -32,7 +32,7 @@ const Page = () => {
 
 
                     <div className='rounded-full bg-blue-500 p-2 border border-white'>
-                        <Image src={'/tech2.svg'} height={50} width={50} className='rounded-full'/>
+                        <Image src={'/tech2.svg'} height={50} width={50} className='rounded-full' alt="alternate pic"/>
                     </div>
                     <p className='font-bold  group-hover:text-white'>
                         Web Development
@@ -44,7 +44,7 @@ const Page = () => {
 
 
                     <div className='rounded-full bg-green-500 p-2 border border-white'>
-                        <Image src={'/tech3.svg'} height={40} width={40} className='rounded-full'/>
+                        <Image src={'/tech3.svg'} height={40} width={40} className='rounded-full' alt="alternate pic"/>
                     </div>
                     <p className='font-bold  group-hover:text-white'>
                         App Development
