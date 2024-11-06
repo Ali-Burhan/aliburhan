@@ -1,0 +1,41 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: 
+      - main    # Run workflow on push to the main branch
+  pull_request:
+    branches:
+      - main    # Run workflow on PR to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # OS to run the job
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Specify the Node version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build  # Your build command
+
+  deploy:
+    needs: build  # Deploy only after build is successful
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      # Add deployment steps here, depending on your host (e.g., Heroku, AWS)
+      - name: Deploy to Production
+        run: echo "Deploying project..."
+        # Add actual deployment command here
