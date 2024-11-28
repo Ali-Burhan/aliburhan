@@ -59,9 +59,10 @@ jobs:
               sudo systemctl start docker
               sudo systemctl enable docker
               sudo usermod -aG docker ubuntu
-              fi
-              sudo docker pull aliiiiiiii032/nextjs-app:latest
-              sudo docker stop nextjs-app || true
-              sudo docker rm nextjs-app || true
-              sudo docker run -d --name nextjs-app -p 80:3000 aliiiiiiii032/nextjs-app:latest
+            fi
+            sudo docker pull aliiiiiiii032/nextjs-app:nextjs-app
+            sudo docker stop nextjs-app || true
+            sudo docker rm nextjs-app || true
+            sudo docker run -d --name nextjs-app -p 80:3000 aliiiiiiii032/nextjs-app:nextjs-app
+
 
