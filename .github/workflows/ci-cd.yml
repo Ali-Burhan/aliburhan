@@ -52,7 +52,16 @@ jobs:
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            docker pull aliiiiiiii032/nextjs-app:latest
-            docker stop nextjs-app || true
-            docker rm nextjs-app || true
-            docker run -d --name nextjs-app -p 80:3000 aliiiiiiii032/nextjs-app:latest
+            if ! command -v docker &> /dev/null; then
+              echo "Docker is not installed. Installing Docker..."
+              sudo apt update
+              sudo apt install -y docker.io
+              sudo systemctl start docker
+              sudo systemctl enable docker
+              sudo usermod -aG docker ubuntu
+              fi
+              docker pull aliiiiiiii032/nextjs-app:latest
+              docker stop nextjs-app || true
+              docker rm nextjs-app || true
+              docker run -d --name nextjs-app -p 80:3000 aliiiiiiii032/nextjs-app:latest
+
