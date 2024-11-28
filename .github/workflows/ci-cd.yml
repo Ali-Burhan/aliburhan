@@ -53,7 +53,7 @@ jobs:
           port: 22
           script: |
             # SSH commands to deploy the app
-            docker pull nextjs-app
-            docker stop nextjs-app || true  # Stop the previous container if it exists
-            docker rm nextjs-app || true    # Remove the old container
-            docker run -d --name nextjs-app -p 80:3000 nextjs-app
+            docker pull aliiiiiiii032/nextjs-app:nextjs-app
+            docker stop aliiiiiiii032/nextjs-app:nextjs-app || true  # Stop the previous container if it exists
+            docker rm aliiiiiiii032/nextjs-app:nextjs-app || true    # Remove the old container
+            docker run -d --name aliiiiiiii032/nextjs-app:nextjs-app -p 80:3000 aliiiiiiii032/nextjs-app:nextjs-app
