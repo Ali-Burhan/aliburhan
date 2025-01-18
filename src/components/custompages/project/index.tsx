@@ -1,29 +1,28 @@
 'use client'
 import { useEffect, useState } from "react"
-import Navbar from "../components/home/navbar"
-import Cards from "../components/project/cards"
+import Cards from "@/app/components/project/cards"
 import AOS from 'aos'
 import "aos/dist/aos.css"
 
 
-const Page = () => {
+const ProjectCustomPage = () => {
   const [filterProjects,setFilterProjects] = useState([])
   const [fetchedProjects,setFetchedProjects] = useState([])
   useEffect(()=>{
   AOS.init()
   },[])
 
-  const handleSearch = (e) => {
+  const handleSearch = (e:any) => {
     if (e.target.value !== "") {
       setSelectedCategory("")
-      setFilterProjects(() =>
+      setFilterProjects((): any =>
         projects.filter((ele) =>
           ele.category.toLowerCase().includes(e.target.value.toLowerCase())
         )
       );
     } else {
       // If the search input is empty, reset filterProjects to the original projects array
-      setFilterProjects(projects);
+      setFilterProjects(projects as any);
     }
   };
 
@@ -65,13 +64,13 @@ const Page = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [loading,setLoading] = useState(false)
 
-  const handleCategoryChange = (e) => {
+  const handleCategoryChange = (e:any) => {
     setSelectedCategory(e.target.value)
     if(e.target.value !== ""){
-      setFilterProjects((pre)=>projects.filter((ele)=>ele.category.toLowerCase().includes(e.target.value.toLowerCase())))
+      setFilterProjects((pre:any):any=>projects.filter((ele)=>ele.category.toLowerCase().includes(e.target.value.toLowerCase())))
     }
     else{
-      setFilterProjects(projects)
+      setFilterProjects(projects as any)
     }
   };
 
@@ -131,10 +130,12 @@ const Page = () => {
               { filterProjects.length==0?  projects.map((ele,index)=>(
                 <Cards link={ele.githubLink} imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
                 )):filterProjects.map((ele,index)=>(
+                  //@ts-ignore
                   <Cards link={ele.githubLink} imgurl={ele.imageurl} title={ele.title} tag={ele.category} desc={ele.description} key={index}/>
                   ))
               }
               {fetchedProjects.length > 0 &&
+              //@ts-ignore
                 fetchedProjects.map((ele,ind)=><Cards key={ind} desc={ele.description} imgurl={ele.image} tag={ele.category} title={ele.title}/>)
               }
               
@@ -146,4 +147,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default ProjectCustomPage

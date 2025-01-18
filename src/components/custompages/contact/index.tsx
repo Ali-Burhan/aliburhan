@@ -1,15 +1,14 @@
 'use client'
-import Image from 'next/image'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-const Page = () => {
-    const {register,handleSubmit} = useForm()
+const ContactCustomPage = () => {
+    const {register,handleSubmit,reset} = useForm()
     const [response,setResponse] = useState(false)
     const [loading,setloading] = useState(false)
     const [error,setError] = useState(false)
     //submit handler
-    async function onSubmitHandler(data) {
+    async function onSubmitHandler(data:any) {
         const {name,phone,company,website,service,message,email} = data
         setloading(true)
         try {
@@ -27,13 +26,18 @@ const Page = () => {
             if(data.status == 200){
                     setResponse(true)
                     setloading(false)
+                    reset()
             }
             else{
                 setError(true)
+                reset()
             }
             setloading(false)
+            reset()
         } catch (error) {
+            setloading(false)
             console.log(error);
+            reset()
         }
     }
 
@@ -42,9 +46,9 @@ const Page = () => {
     <>
     { loading &&
         <div className='fixed flex-col gap-5 top-0 h-[100vh] z-50 bg-transparent  bg-gray-600 flex justify-center items-center w-[100vw]'>
-    <div class="loader">
-  <div class="loader_cube loader_cube--color"></div>
-   <div class="loader_cube loader_cube--glowing"></div>
+    <div className="loader">
+  <div className="loader_cube loader_cube--color"></div>
+   <div className="loader_cube loader_cube--glowing"></div>
 </div>
 <h1 className='bg-gradient-to-l from-orange-500 to-green-500 p-2 rounded text-white'>
    sending Messages
@@ -94,7 +98,7 @@ const Page = () => {
                     </div>
                     <div className='flex flex-col gap-1 flex-1'>
                         <p className='text-xs'>Service Requierd</p>
-                        <select name="" id=""  className='border-2 p-[10px] outline-none w-full' {...register('service')}>
+                        <select className='border-2 p-[10px] outline-none w-full' {...register('service')}>
                             <option value="Web">Web Development</option>
                             <option value="App">App Development</option>
                         </select>
@@ -104,7 +108,7 @@ const Page = () => {
                 <div className='flex flex-col gap-2'>
 
                         <p className='text-xs'>Message</p>
-                        <textarea name="message" id="message" cols="30" className='w-full outline-none p-2 border-2' rows="7" placeholder='Example Text' {...register('message')}></textarea>
+                        <textarea id="message" cols={30} className='w-full outline-none p-2 border-2' rows={7} placeholder='Example Text' {...register('message')}></textarea>
                 </div>
             <button className='font-semibold tracking-tight text-sm cursor-pointer flex gap-2 outline-none items-center group hover:underline transition-all duration-300'>Submit Form <svg width="30" height="30" className='group-hover:ml-2 transition-all' fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
   <path d="m9 18 6-6-6-6"></path>
@@ -117,4 +121,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default ContactCustomPage
