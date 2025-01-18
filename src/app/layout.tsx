@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <title>Burhan</title>
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-        <Suspense fallback={<div>Loading....</div>}>
+        <Suspense fallback={<div>Loading....... </div>}>
         <ProgressBar
           color="red"
           shallowRouting
