@@ -56,13 +56,82 @@ const ContactCustomPage = () => {
     </div>
     }
     <div className='h-fit bg-[#f4f4f4] pt-16 lg:px-28 md:px-14 sm:px-8 px-8'>
-        <div className='flex py-14 gap-9 sm:flex-col flex-col md:flex-row'>
-            <div className='lg:basis-1/2 md:basis-1/3 relative flex flex-col gap-6'>
+        <div className='flex py-14 gap-9 sm:flex-col items-center justify-center flex-col md:flex-row'>
+            {/* <div className='lg:basis-1/2 md:basis-1/3 relative flex flex-col gap-6'>
             <h1 className='text-5xl tracking-tight'>Get in Touch</h1>
             <p className='tracking-tight'>Get in touch with me through this form. Fill out all the necessary details so I can help you out in the best way possible.</p>
             { response && <p className='bg-gradient-to-l from-orange-500 to-green-500 items-center text-white p-2 rounded flex justify-between'>Thanks For Your Mesasge! <span className='text-xl rotate-45 cursor-pointer' onClick={()=>setResponse(false)}>+</span></p>}
             { error && <p className='bg-red-500 items-center text-white p-2 rounded flex justify-between'>Some Error Occured 🙁 <span className='text-xl rotate-45 cursor-pointer' onClick={()=>setError(false)}>+</span></p>}
-            </div>
+            </div> */}
+            <div className='lg:basis-1/2 md:basis-1/3 relative flex flex-col gap-8 p-6 rounded-lg bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-lg'>
+  <h1 className='text-5xl font-bold tracking-tight mb-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-green-500'>
+    Get in Touch
+  </h1>
+  <p className='text-lg tracking-tight'>
+    Let's connect! Feel free to reach out through the form, email, or my social links below. I'd love to help and collaborate with you.
+  </p>
+
+  {/* Dynamic Message Box */}
+  {response && (
+    <p className='flex items-center font-bold text-white justify-between p-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg shadow-md'>
+      Thanks for your message! 
+      <span
+        className='text-2xl font-bold rotate-45 cursor-pointer text-white hover:text-black'
+        onClick={() => setResponse(false)}
+      >
+        +
+      </span>
+    </p>
+  )}
+  {error && (
+    <p className='flex items-center justify-between p-3 bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-lg shadow-md'>
+      Some error occurred 🙁
+      <span
+        className='text-2xl font-bold rotate-45 cursor-pointer hover:text-black'
+        onClick={() => setError(false)}
+      >
+        +
+      </span>
+    </p>
+  )}
+
+  {/* Contact Details */}
+  <div className='mt-6 flex flex-col gap-4'>
+    {/* Email */}
+    <a
+      href='mailto:aliburhandev@gmail.com'
+      className='flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:scale-105 transition transform duration-200 shadow-md'
+    >
+      📧 <span className='text-lg font-medium'>aliburhandev@gmail.com</span>
+    </a>
+    {/* Phone */}
+    <a
+      href='tel:+923161499488'
+      className='flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-green-500 to-yellow-500 hover:scale-105 transition transform duration-200 shadow-md'
+    >
+      📞 <span className='text-lg font-medium'>+92 316 1499488</span>
+    </a>
+    {/* GitHub */}
+    <a
+      href='https://github.com/Ali-Burhan'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-gray-700 to-gray-900 hover:scale-105 transition transform duration-200 shadow-md'
+    >
+      🌐 <span className='text-lg font-medium'>github.com/Ali-Burhan</span>
+    </a>
+    {/* LinkedIn */}
+    <a
+      href='https://www.linkedin.com/in/ali-burhan-9076b42b6/'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-blue-700 to-indigo-600 hover:scale-105 transition transform duration-200 shadow-md'
+    >
+      💼 <span className='text-lg font-medium'>linkedin.com/in/ali-burhan</span>
+    </a>
+  </div>
+</div>
+
             <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className='lg:basis-1/2 md:basis-2/3 flex flex-col gap-4'>
                 {/* input flex div */}
