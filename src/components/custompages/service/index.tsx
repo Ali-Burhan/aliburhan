@@ -101,7 +101,7 @@ const ServiceCustomPage = () => {
           <div className="md:flex-1">
             <div className='flex flex-col gap-3 justify-end'>
               <p className='text-white tracking-tight'>
-                I specialize in building scalable, user-friendly web solutions that stand out in the digital landscape. Whether it's a business site or a custom application, I ensure it’s visually stunning and functionally flawless. Let’s collaborate to create something extraordinary.
+                I specialize in building scalable, user-friendly web solutions that stand out in the digital landscape. Whether it&apos;s a business site or a custom application, I ensure it’s visually stunning and functionally flawless. Let’s collaborate to create something extraordinary.
               </p>
               <Link href={'/projects'} className='w-full py-4 grid place-items-center bg-white text-blue-700 font-semibold hover:scale-105 transition-transform'>
                 VIEW PROJECTS

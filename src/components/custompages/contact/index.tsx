@@ -68,7 +68,7 @@ const ContactCustomPage = () => {
     Get in Touch
   </h1>
   <p className='text-lg tracking-tight'>
-    Let's connect! Feel free to reach out through the form, email, or my social links below. I'd love to help and collaborate with you.
+    Let&apos;s connect! Feel free to reach out through the form, email, or my social links below. I&apos;d love to help and collaborate with you.
   </p>
 
   {/* Dynamic Message Box */}
