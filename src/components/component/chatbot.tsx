@@ -42,7 +42,7 @@ export function Chatbot() {
     setPendingBotMessage(""); // Initialize pending message for bot response
 
     try {
-      const res = await fetch(`https://0c5f-13-60-187-193.ngrok-free.app/chat?question=${encodeURIComponent(messageToSend)}`, {
+      const res = await fetch(`https://b8ac-13-60-187-193.ngrok-free.app/chat?question=${encodeURIComponent(messageToSend)}`, {
         method: "GET",
         headers:{
           'ngrok-skip-browser-warning': 'true',
