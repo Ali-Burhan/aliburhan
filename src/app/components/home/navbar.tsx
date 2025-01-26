@@ -44,6 +44,9 @@ const Navbar = () => {
           <Link href={'/projects'} className="text-xs leading-none  hover:underline">
             Projects
           </Link>
+          <Link href={'/experience'} className="text-xs leading-none  hover:underline">
+            Experience
+          </Link>
           <Link href={'/contact'} className="text-xs leading-none  hover:underline">
             Contact
           </Link>
@@ -66,6 +69,9 @@ const Navbar = () => {
           </Link>
           <Link href={'/projects'} className="font-bold leading-none  hover:underline">
             Projects
+          </Link>
+          <Link href={'/experience'} className="font-bold leading-none  hover:underline">
+            Experience
           </Link>
           <Link href={'/contact'} className="font-bold leading-none  hover:underline">
             Contact
