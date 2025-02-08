@@ -179,10 +179,20 @@ export function Chatbot() {
             </div>
           </div>
         ))}
-        {pendingBotMessage && (
+        {pendingBotMessage? (
           <div className="flex justify-start">
             <div className="rounded-lg max-w-[80%] p-3 text-sm bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
               <MessageRenderer message={pendingBotMessage} />
+            </div>
+          </div>
+        ) : (
+          <div className="flex justify-center animate-pulse">
+            <div className="max-w-[80%] px-4 py-3 text-sm rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-300 shadow-lg">
+              <p className="font-semibold">Bot is under maintenance</p>
+              <p className="text-sm">
+                Please bear with me while I work on getting the bot back online.
+                <span className="animate-spin h-5 w-5 border-b-2 border-yellow-900 dark:border-yellow-300 ml-2"></span>
+              </p>
             </div>
           </div>
         )}
