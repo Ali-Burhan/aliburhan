@@ -20,7 +20,10 @@ const Techbelow = () => {
             <div className='bg-white h-full w-full grid md:grid-cols-2 sm:grid-cols-1 grid-cols-1 group-hover:bg-blue-500'>
                         <div className='flex gap-4 flex-col p-10 justify-center items-center group-hover:text-white'>
                             <h1 className='text-4xl font-semibold tracking-widest'>Work With A Designer That Listens To Your Problems</h1>
-                            <p className='text-lg tracking-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iure iste illo modi amet odit nostrum placeat accusamus quidem ipsa?</p>
+                            <p className='text-lg tracking-tight'>
+  I prioritize understanding your needs, ensuring every design decision aligns with your vision. Let’s collaborate to craft solutions that truly resonate with your goals.
+</p>
+
                             <p className='font-semibold tracking-tighter hover:underline'>Start Projects</p>
                         </div>
                         <div className='group-hover:my-5 sm:hidden hidden md:block group-hover:scale-105 transition-all duration-200' data-aos="zoom-in">

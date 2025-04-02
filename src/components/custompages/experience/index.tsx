@@ -101,7 +101,7 @@ const ExperienceCustomPage = () => {
           </ul>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-teal-400">
-          <h3 className="text-xl font-semibold text-[#2d3748] mb-4">Frameworks</h3>
+          <h3 className="text-xl font-semibold text-[#2d3748] mb-4">Frameworks (Web)</h3>
           <ul className="list-disc pl-5 text-gray-700">
             <li>React.js</li>
             <li>Next.js</li>
@@ -109,7 +109,20 @@ const ExperienceCustomPage = () => {
             <li>FastAPI</li>
             <li>Tailwind CSS</li>
             <li>Material UI</li>
+            <li>Antd</li>
             <li>Express.js</li>
+          </ul>
+        </div>
+        <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-teal-400">
+          <h3 className="text-xl font-semibold text-[#2d3748] mb-4">Frameworks (AI)</h3>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>SKLearn</li>
+            <li>Pytorch</li>
+            <li>LangChain</li>
+            <li>LangGraph</li>
+            <li>Phi Data</li>
+            <li>Crew AI</li>
+            <li>Hugging Face</li>
           </ul>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-400">
