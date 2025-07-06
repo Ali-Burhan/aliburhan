@@ -1,5 +1,5 @@
 import ProjectCustomPage from "@/components/custompages/project"
-const Page = async () => {
+const Page = () => {
   
   return (
     <ProjectCustomPage/>

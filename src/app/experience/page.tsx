@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const Experience = () => {
   return (
-    <div className='h-fit bg-[#f4f4f4] pt-16 lg:px-28 md:px-14 sm:px-8 px-8'>
+    <div className=''>
       <ExperienceCustomPage/>
     </div>
   )
