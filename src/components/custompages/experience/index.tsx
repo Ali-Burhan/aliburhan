@@ -201,72 +201,74 @@ const ExperienceCustomPage = () => {
                         Discover the journey and accomplishments of Ali Burhan as a Full-Stack Developer and AI Engineer.
                     </p>
                 </div>
+                <div data-aos="fade-up" data-aos-delay="200" className="mb-16 mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">My Professional Journey</h2>
+    <div className="relative wrap overflow-hidden p-0 md:p-10 h-full">
+        {/* Vertical line for timeline - hidden on small screens, shown on md and up */}
+        <div className="hidden md:block border-2-2 absolute border-opacity-60 border-blue-600 h-full border"
+            style={{ left: '50%' }}></div>
 
-                {/* Experience Timeline Section */}
-                <div data-aos="fade-up" data-aos-delay="200" className="mb-16 max-w-5xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">My Professional Journey</h2>
-                    <div className="relative wrap overflow-hidden p-10 h-full">
-                        {/* Increased opacity and changed color for better visibility */}
-                        <div className="border-2-2 absolute border-opacity-60 border-blue-600 h-full border" style={{ left: '50%' }}></div>
-
-                        {/* Experience 1: Hashlogics */}
-                        <div data-aos="fade-right" data-aos-offset="150" className="mb-8 flex justify-between items-center w-full right-timeline">
-                            <div className="order-1 w-5/12"></div>
-                            <div className="z-20 flex items-center order-1 bg-gradient-to-br from-blue-500 to-indigo-500 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">💼</h1>
-                            </div>
-                            <div className="order-1 w-5/12 px-6 py-4">
-                                <h3 className="text-xl sm:text-2xl font-bold text-blue-300">Hashlogics</h3>
-                                <p className="text-md sm:text-lg font-medium text-blue-200 mb-4">MERN Stack Developer | October 2024 - Present</p>
-                                <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-xl border border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:border-blue-400">
-                                    <ul className="space-y-4 text-gray-200 text-base">
-                                        <li><strong className="font-semibold text-white">Project Lumaya:</strong> Developed responsive and feature-rich frontend applications using Next.js, with a focus on performance and accessibility.</li>
-                                        <li><strong className="font-semibold text-white">Backend Development:</strong> Designed and implemented a robust backend using FastAPI, enabling efficient data handling and secure API integrations.</li>
-                                        <li><strong className="font-semibold text-white">Full-Stack Delivery:</strong> Delivered a complete and scalable solution as a single-handed developer, showcasing expertise in both frontend and backend technologies.</li>
-                                        <li><strong className="font-semibold text-white">Version Control:</strong> Managed the project lifecycle using Git and GitLab for version control and collaborative development.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Experience 2: Techling */}
-                        <div data-aos="fade-left" data-aos-offset="150" className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                            <div className="order-1 w-5/12"></div>
-                            <div className="z-20 flex items-center order-1 bg-gradient-to-br from-green-500 to-teal-500 shadow-xl w-8 h-8 rounded-full">
-                                <h1 className="mx-auto font-semibold text-lg text-white">💻</h1>
-                            </div>
-                            <div className="order-1 w-5/12 px-6 py-4 text-right">
-                                <h3 className="text-xl sm:text-2xl font-bold text-green-300">Techling</h3>
-                                <p className="text-md sm:text-lg font-medium text-green-200 mb-4">Junior Web Developer | May 2024 - October 2024</p>
-                                <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-xl border border-green-500/50 transition-all duration-300 hover:shadow-2xl hover:border-green-400">
-                                    <ul className="space-y-4 text-gray-200 text-base">
-                                        <li><strong className="font-semibold text-white">Project CazVid:</strong> Developed frontend applications focusing on creating responsive and high-performance web experiences using Next.js, with an emphasis on user experience and interface design.</li>
-                                        <li><strong className="font-semibold text-white">Full-Stack Contribution:</strong> Engaged in full-stack development projects, applying both frontend and backend skills to create comprehensive and scalable solutions.</li>
-                                        <li><strong className="font-semibold text-white">Collaboration & Version Control:</strong> Utilized Git for version control and collaborated with the team through GitHub and GitLab, ensuring smooth code management and team synchronization.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        {/* Experience 1: Hashlogics */}
+        <div data-aos="fade-right" data-aos-offset="150"
+            className="mb-8 flex flex-col md:flex-row justify-between items-center w-full md:right-timeline">
+            <div className="order-1 md:w-6/12"></div> {/* Empty div for spacing on larger screens */}
+            <div
+                className="z-20 flex items-center order-1 bg-gradient-to-br from-blue-500 to-indigo-500 shadow-xl w-10 h-10 rounded-full md:absolute md:left-1/2 md:transform md:-translate-x-1/2 mt-4 md:mt-0">
+                <h1 className="mx-auto font-semibold text-lg text-white">💼</h1>
+            </div>
+            <div className="order-1 md:w-6/12 px-6 py-4 text-center md:text-left md:pr-12">
+                <h3 className="text-xl sm:text-2xl font-bold text-blue-300">Hashlogics</h3>
+                <p className="text-md sm:text-lg font-medium text-blue-200 mb-4">MERN Stack Developer | October 2024 -
+                    Present</p>
+                <div
+                    className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-xl border border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:border-blue-400">
+                    <ul className="space-y-4 text-gray-200 text-base">
+                        <li><strong className="font-semibold text-white">Project Lumaya:</strong> Developed responsive
+                            and feature-rich frontend applications using Next.js, with a focus on performance and
+                            accessibility.</li>
+                        <li><strong className="font-semibold text-white">Backend Development:</strong> Designed and
+                            implemented a robust backend using FastAPI, enabling efficient data handling and secure API
+                            integrations.</li>
+                        <li><strong className="font-semibold text-white">Full-Stack Delivery:</strong> Delivered a
+                            complete and scalable solution as a single-handed developer, showcasing expertise in both
+                            frontend and backend technologies.</li>
+                        <li><strong className="font-semibold text-white">Version Control:</strong> Managed the project
+                            lifecycle using Git and GitLab for version control and collaborative development.</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
 
-                {/* Education Section */}
-                <div data-aos="fade-up" data-aos-delay="300" className="mb-16 max-w-4xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8">My Academic Background</h2>
-                    <div className="space-y-8">
-                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-indigo-500/50 transition-all duration-300 hover:shadow-2xl hover:border-indigo-400 group">
-                            <h3 className="text-xl sm:text-2xl font-medium text-indigo-300 mb-2 group-hover:text-indigo-200">
-                                Bachelor’s in Computer Science, NFC Institute of Engineering & Fertilizer Research
-                            </h3>
-                            <p className="text-gray-300 text-lg">CGPA: 3.0/4.0 (September 2020 - November 2024)</p>
-                            <p className="text-gray-300 text-lg">Sheikhupura, Pakistan</p>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-purple-500/50 transition-all duration-300 hover:shadow-2xl hover:border-purple-400 group">
-                            <h3 className="text-xl sm:text-2xl font-medium text-purple-300 mb-2 group-hover:text-purple-200">FSc in Pre-Engineering, Aspire Group of Colleges</h3>
-                            <p className="text-gray-300 text-lg">Sheikhupura, Pakistan (July 2018 - February 2020)</p>
-                        </div>
-                    </div>
+        {/* Experience 2: Techling */}
+        <div data-aos="fade-left" data-aos-offset="150"
+            className="mb-8 flex flex-col md:flex-row-reverse justify-between items-center w-full md:left-timeline">
+            <div className="order-1 md:w-6/12"></div> {/* Empty div for spacing on larger screens */}
+            <div
+                className="z-20 flex items-center order-1 bg-gradient-to-br from-green-500 to-teal-500 shadow-xl w-10 h-10 rounded-full md:absolute md:left-1/2 md:transform md:-translate-x-1/2 mt-4 md:mt-0">
+                <h1 className="mx-auto font-semibold text-lg text-white">💻</h1>
+            </div>
+            <div className="order-1 md:w-6/12 px-6 py-4 text-center md:text-right md:pl-12">
+                <h3 className="text-xl sm:text-2xl font-bold text-green-300">Techling</h3>
+                <p className="text-md sm:text-lg font-medium text-green-200 mb-4">Junior Web Developer | May 2024 -
+                    October 2024</p>
+                <div
+                    className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-xl border border-green-500/50 transition-all duration-300 hover:shadow-2xl hover:border-green-400">
+                    <ul className="space-y-4 text-gray-200 text-base">
+                        <li><strong className="font-semibold text-white">Project CazVid:</strong> Developed frontend
+                            applications focusing on creating responsive and high-performance web experiences using
+                            Next.js, with an emphasis on user experience and interface design.</li>
+                        <li><strong className="font-semibold text-white">Full-Stack Contribution:</strong> Engaged in
+                            full-stack development projects, applying both frontend and backend skills to create
+                            comprehensive and scalable solutions.</li>
+                        <li><strong className="font-semibold text-white">Collaboration & Version Control:</strong>
+                            Utilized Git for version control and collaborated with the team through GitHub and GitLab,
+                            ensuring smooth code management and team synchronization.</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
 
                 {/* Skills Section */}
                 <div data-aos="fade-up" data-aos-delay="400" className="mb-16 max-w-6xl mx-auto">
@@ -330,44 +332,191 @@ const ExperienceCustomPage = () => {
                     </div>
                 </div>
 
-                {/* Projects Section */}
-                <div data-aos="fade-up" data-aos-delay="500" className="mb-16 max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">Key Projects</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Project Card: CazVid */}
-                        <div data-aos="zoom-in" data-aos-delay="600" className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-pink-500/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-pink-400">
-                            <div className="absolute top-4 right-4 bg-pink-500/30 text-pink-100 text-xs px-3 py-1 rounded-full font-semibold">Web Development</div>
-                            <h3 className="text-2xl font-semibold text-pink-300 mb-4 group-hover:text-pink-200">CazVid</h3>
-                            <p className="text-gray-200 text-lg">
-                                Developed responsive and high-performance web applications using **Next.js**, with a focus on user experience and interface design. Contributed to both frontend and full-stack development at **Techling**.
-                            </p>
+                {/* Education Section */}
+                <div data-aos="fade-up" data-aos-delay="300" className="mb-16 max-w-4xl mx-auto">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8">My Academic Background</h2>
+                    <div className="space-y-8">
+                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-indigo-500/50 transition-all duration-300 hover:shadow-2xl hover:border-indigo-400 group">
+                            <h3 className="text-xl sm:text-2xl font-medium text-indigo-300 mb-2 group-hover:text-indigo-200">
+                                Bachelor’s in Computer Science, NFC Institute of Engineering & Fertilizer Research
+                            </h3>
+                            <p className="text-gray-300 text-lg">CGPA: 3.0/4.0 (September 2020 - November 2024)</p>
+                            <p className="text-gray-300 text-lg">Sheikhupura, Pakistan</p>
                         </div>
-                        {/* Project Card: TAHMS */}
-                        <div data-aos="zoom-in" data-aos-delay="700" className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-blue-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-blue-500">
-                            <div className="absolute top-4 right-4 bg-blue-600/30 text-blue-100 text-xs px-3 py-1 rounded-full font-semibold">System Integration</div>
-                            <h3 className="text-2xl font-semibold text-blue-300 mb-4 group-hover:text-blue-200">TAHMS (Tourism & Hospitality Management System)</h3>
-                            <p className="text-gray-200 text-lg">
-                                Contributed to a complete solution for the **Tourism and Hospitality Management System**, showcasing expertise in web development and robust systems integration.
-                            </p>
-                        </div>
-                        {/* Project Card: Lumaya */}
-                        <div data-aos="zoom-in" data-aos-delay="800" className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-purple-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-purple-500">
-                            <div className="absolute top-4 right-4 bg-purple-600/30 text-purple-100 text-xs px-3 py-1 rounded-full font-semibold">Full-Stack</div>
-                            <h3 className="text-2xl font-semibold text-purple-300 mb-4 group-hover:text-purple-200">Lumaya</h3>
-                            <p className="text-gray-200 text-lg">
-                                Built the frontend and backend, demonstrating full-stack development, performance optimization, and secure API integrations using **Next.js** and **FastAPI**.
-                            </p>
-                        </div>
-                        {/* Project Card: FileCrawl */}
-                        <div data-aos="zoom-in" data-aos-delay="900" className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-green-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-green-500">
-                            <div className="absolute top-4 right-4 bg-green-600/30 text-green-100 text-xs px-3 py-1 rounded-full font-semibold">AI/ML</div>
-                            <h3 className="text-2xl font-semibold text-green-300 mb-4 group-hover:text-green-200">FileCrawl</h3>
-                            <p className="text-gray-200 text-lg">
-                                Created an **AI-driven file processing tool**, leveraging technologies like **LangChain** and **Hugging Face** for seamless **AI workflows** and intelligent automation.
-                            </p>
+                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-purple-500/50 transition-all duration-300 hover:shadow-2xl hover:border-purple-400 group">
+                            <h3 className="text-xl sm:text-2xl font-medium text-purple-300 mb-2 group-hover:text-purple-200">FSc in Pre-Engineering, Aspire Group of Colleges</h3>
+                            <p className="text-gray-300 text-lg">Sheikhupura, Pakistan (July 2018 - February 2020)</p>
                         </div>
                     </div>
                 </div>
+
+                {/* Projects Section */}
+              <div data-aos="fade-up" data-aos-delay="500" className="mb-16 max-w-6xl mx-auto">
+    <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">Key Projects</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Project Card: Cazvid */}
+        <div data-aos="zoom-in" data-aos-delay="600"
+            className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-pink-500/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-pink-400">
+            <div className="absolute top-4 right-4 bg-pink-500/30 text-pink-100 text-xs px-3 py-1 rounded-full font-semibold">
+                Full-Stack Platform</div>
+            <h3 className="text-2xl font-semibold text-pink-300 my-4 group-hover:text-pink-200">Cazvid</h3>
+            <p className="text-gray-200 text-lg">
+                A professional talent acquisition platform that connects top-tier candidates with leading companies.
+                Built with modern technologies to streamline the hiring process for both recruiters and job seekers.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">Next.js</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">NestJS</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">PostgreSQL</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">TypeScript</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">Tailwind CSS</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">Redis</span>
+                <span
+                    className="bg-pink-600/30 text-pink-100 text-xs px-2 py-1 rounded-full font-medium">Docker</span>
+            </div>
+            <div className="mt-6">
+                <a href="https://desktop.cazvid.com" target="_blank"
+                    className="text-pink-300 hover:text-pink-200 font-semibold text-lg inline-flex items-center">
+                    View Live
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path
+                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        {/* Project Card: Forwood Safety */}
+        <div data-aos="zoom-in" data-aos-delay="700"
+            className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-blue-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-blue-500">
+            <div className="absolute top-4 right-4 bg-blue-600/30 text-blue-100 text-xs px-3 py-1 rounded-full font-semibold">
+                Serverless Architecture</div>
+            <h3 className="text-2xl font-semibold text-blue-300 my-4 group-hover:text-blue-200">Forwood Safety</h3>
+            <p className="text-gray-200 text-lg">
+                A comprehensive safety management system built entirely on serverless architecture. Utilizes AWS Lambda,
+                API Gateway, and modern infrastructure-as-code practices for maximum scalability and reliability.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">React.js</span>
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">AWS Lambda</span>
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">API Gateway</span>
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">Terraform</span>
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">DynamoDB</span>
+                <span className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">S3</span>
+                <span
+                    className="bg-blue-700/30 text-blue-100 text-xs px-2 py-1 rounded-full font-medium">CloudFormation</span>
+            </div>
+            <div className="mt-6">
+                <a href="https://id.dev.platform.forwoodsafety.com" target="_blank" rel="noopener noreferrer"
+                    className="text-blue-300 hover:text-blue-200 font-semibold text-lg inline-flex items-center">
+                    View Live
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path
+                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        {/* Project Card: Lumaya */}
+        <div data-aos="zoom-in" data-aos-delay="800"
+            className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-purple-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-purple-500">
+            <div className="absolute top-4 right-4 bg-purple-600/30 text-purple-100 text-xs px-3 py-1 rounded-full font-semibold">
+                Business Acquisition Platform</div>
+            <h3 className="text-2xl font-semibold text-purple-300 my-4 group-hover:text-purple-200">Lumaya</h3>
+            <p className="text-gray-200 text-lg">
+                A sophisticated business acquisition platform (lumaya.ch) that facilitates the buying and selling of
+                businesses. Features advanced valuation tools, due diligence workflows, and secure transaction
+                management.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">Next.js</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">FastAPI</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">PostgreSQL</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">Python</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">Stripe</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">AWS</span>
+                <span
+                    className="bg-purple-700/30 text-purple-100 text-xs px-2 py-1 rounded-full font-medium">Docker</span>
+            </div>
+            <div className="mt-6">
+                <a href="https://lumaya.ch" target="_blank" rel="noopener noreferrer"
+                    className="text-purple-300 hover:text-purple-200 font-semibold text-lg inline-flex items-center">
+                    View Live
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path
+                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        {/* Project Card: CancerBERT */}
+        <div data-aos="zoom-in" data-aos-delay="900"
+            className="group bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-green-600/50 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-green-500">
+            <div className="absolute top-4 right-4 bg-green-600/30 text-green-100 text-xs px-3 py-1 rounded-full font-semibold">
+                NLP Research</div>
+            <h3 className="text-2xl font-semibold text-green-300 my-4 group-hover:text-green-200">CancerBERT</h3>
+            <p className="text-gray-200 text-lg">
+                Research project focused on fine-tuning BERT and LLaMA-3 models for cancer diagnosis using the Hugging
+                Face library and PyTorch. Utilized the Cancer Genome Atlas (TCGA) dataset to train and evaluate the
+                models.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+                <span
+                    className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">PyTorch</span>
+                <span className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">Hugging
+                    Face</span>
+                <span
+                    className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">Transformers</span>
+                <span
+                    className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">LLaMA-3</span>
+                <span
+                    className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">BERT</span>
+                <span
+                    className="bg-green-700/30 text-green-100 text-xs px-2 py-1 rounded-full font-medium">TCGA</span>
+            </div>
+            <div className="mt-6">
+                <a href="https://github.com/aliburhan/CancerBERT" target="_blank" rel="noopener noreferrer"
+                    className="text-green-300 hover:text-green-200 font-semibold text-lg inline-flex items-center">
+                    View on GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fillRule="evenodd"
+                            d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.167 6.839 9.48.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.702-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.107-1.465-1.107-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.829.091-.645.35-1.088.636-1.338-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.03-2.68-.103-.253-.448-1.274.097-2.646 0 0 .84-.268 2.75 1.025A9.564 9.564 0 0110 4.872c.85.004 1.7.11 2.505.322 1.902-1.293 2.74-1.025 2.74-1.025.546 1.372.202 2.393.099 2.646.64.696 1.029 1.59 1.029 2.68 0 3.841-2.339 4.681-4.566 4.935.359.308.678.917.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C17.13 18.172 20 14.425 20 10.017 20 4.484 15.522 0 10 0z"
+                            clipRule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </div>
     );

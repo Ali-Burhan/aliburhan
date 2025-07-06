@@ -117,13 +117,6 @@ export default function AboutCustomPage() {
 
     const skillsData = [
         {
-            title: "Machine Learning",
-            description: "I build and deploy machine learning models with a focus on data-driven decision-making and automation.",
-            icon: "/tech1.svg",
-            bgColor: "bg-orange-500",
-            hoverColor: "hover:bg-orange-600"
-        },
-        {
             title: "Web Development",
             description: "Experienced in creating responsive, user-friendly web applications using React, Next.js, and Node.js.",
             icon: "/tech2.svg",
@@ -136,6 +129,13 @@ export default function AboutCustomPage() {
             icon: "/tech3.svg",
             bgColor: "bg-green-500",
             hoverColor: "hover:bg-green-600"
+        },
+        {
+            title: "Machine Learning",
+            description: "I build and deploy machine learning models with a focus on data-driven decision-making and automation.",
+            icon: "/tech1.svg",
+            bgColor: "bg-orange-500",
+            hoverColor: "hover:bg-orange-600"
         },
     ];
 

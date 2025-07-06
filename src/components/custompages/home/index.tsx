@@ -120,7 +120,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+      <div className="relative lg:h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-black pt-24 lg:pt-0">
         {/* Three.js Background */}
         <div 
           ref={mountRef} 
@@ -169,7 +169,7 @@ export default function Home() {
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-400 text-lg lg:text-xl max-w-2xl mb-8 leading-relaxed">
+                <p className="text-gray-400 text-lg lg:text-xl lg:max-w-2xl mb-8 text-center lg:text-left leading-relaxed">
                   I am a Pakistan-based Graphic Designer & Next.js Developer who works with startups & corporations on web design, branding, and presentations.
                 </p>
 
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
 
               {/* Contact Cards - Side Panel */}
-              <div className="flex-shrink-0 lg:w-80">
+              <div className="flex-shrink-0 my-16 lg:my-0 lg:w-80">
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-2xl">
                   <h3 className="text-white font-semibold text-lg mb-4">Get In Touch</h3>
                   <div className="space-y-3">

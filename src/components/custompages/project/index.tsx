@@ -171,7 +171,7 @@ const ProjectsPage = () => {
         'Analytics and reporting dashboard'
       ],
       tags: ['Platform', 'AI-Powered'],
-      liveUrl: null,
+      liveUrl: 'desktop.cazvid.com',
       githubUrl: null,
       icon: BriefcaseIcon
     },
@@ -182,14 +182,14 @@ const ProjectsPage = () => {
       description: 'A comprehensive safety management system built entirely on serverless architecture. Utilizes AWS Lambda, API Gateway, and modern infrastructure-as-code practices for maximum scalability and reliability.',
       techStack: ['React.js', 'AWS Lambda', 'API Gateway', 'Terraform', 'DynamoDB', 'S3', 'CloudFormation'],
       features: [
-        'Serverless microservices architecture',
-        'Real-time safety monitoring',
-        'Automated incident reporting',
-        'Compliance tracking and alerts',
-        'Mobile-responsive dashboard'
+        'Serverless microservices architecture for mining safety management',
+        'Real-time critical risk management (CRM)',
+        'Automated incident reporting and tracking',
+        'Compliance tracking and alerts for teams, companies, and physical locations',
+        'Mobile-responsive multi-tenant dashboard for admin, companies, and teams'
       ],
       tags: ['Serverless', 'AWS', 'Enterprise'],
-      liveUrl: null,
+      liveUrl: 'id.dev.platform.forwoodsafety.com',
       githubUrl: null,
       icon: ShieldIcon
     },
@@ -210,7 +210,26 @@ const ProjectsPage = () => {
       liveUrl: 'https://lumaya.ch',
       githubUrl: null,
       icon: TrendingUpIcon
-    }
+    },
+    {
+      id: 4,
+      title: 'CancerBERT',
+      category: 'NLP Research',
+      description: 'Research project focused on fine-tuning BERT and LLaMA-3 models for cancer diagnosis using the Hugging Face library and PyTorch. Utilized the Cancer Genome Atlas (TCGA) dataset to train and evaluate the models.',
+      techStack: ['PyTorch', 'Hugging Face', 'Transformers', 'LLaMA-3', 'BERT', 'TCGA'],
+      features: [
+        'Fine-tuning BERT and LLaMA-3 models for cancer diagnosis',
+        'Utilized the TCGA dataset for training and evaluation',
+        'Utilized Hugging Face library for model implementation and training',
+        'Utilized PyTorch for model training and inference',
+        'Utilized Transformers library for model architecture implementation'
+      ],
+      tags: ['NLP', 'Research', 'Hugging Face', 'PyTorch'],
+      liveUrl: null,
+      githubUrl: 'https://github.com/aliburhan/CancerBERT',
+      icon: MicroscopeIcon
+    },
+
   ];
 
   // Title animation effect
@@ -510,14 +529,14 @@ const ProjectsPage = () => {
               Each project represents a unique challenge solved with cutting-edge technology, innovative design, and meticulous attention to detail.
             </p>
             {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+            {/* <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
               <div className="flex flex-col items-center text-gray-400">
                 <span className="text-sm mb-4">Explore My Work</span>
                 <div className="w-px h-16 bg-gradient-to-b from-indigo-500 to-transparent">
                   <div className="w-3 h-3 bg-indigo-500 rounded-full -translate-x-1 animate-bounce" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -675,6 +694,13 @@ function GithubIcon({ className = "w-5 h-5" }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 6a6 6 0 016-6c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4zm-1.5-6a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+    </svg>
+  );
+}
+function MicroscopeIcon({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15a2 2 0 11-3.286 0 2 2 0 013.286 0M21 12a9 9 0 01-9 9" />
     </svg>
   );
 }
