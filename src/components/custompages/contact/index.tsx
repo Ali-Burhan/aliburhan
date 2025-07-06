@@ -3,11 +3,17 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import { useForm } from 'react-hook-form'
 import * as THREE from 'three'
 import { Mail, Phone, Github, Linkedin, Building, Globe, Send, User, X } from 'lucide-react'
+//@ts-ignore
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
+//@ts-ignore
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
+//@ts-ignore
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
+//@ts-ignore
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
+//@ts-ignore
 import { FXAAShader } from 'three/examples/jsm/shaders/FXAAShader'
+//@ts-ignore
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // Custom GLSL Shaders
@@ -154,7 +160,7 @@ const particlesFragmentShader = `
 `;
 
 // Reusable Input Component
-const Input = ({ name, label, type = 'text', register, required, Icon }) => (
+const Input = ({ name, label, type = 'text', register, required, Icon }:any) => (
     <div className="relative group">
         <input
             id={name}
@@ -179,14 +185,14 @@ const ContactCustomPage = () => {
     const [isError, setIsError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const mountRef = useRef(null);
-    const controlsRef = useRef(null); // Ref for OrbitControls
+    const controlsRef = useRef<any>(null); // Ref for OrbitControls
 
     // Three.js Scene Setup
     useEffect(() => {
         if (!mountRef.current) return;
-        const mount = mountRef.current;
-        let animationFrameId;
-        let composer;
+        const mount:any = mountRef.current;
+        let animationFrameId:any;
+        let composer:any;
 
         // Scene, Camera, Renderer
         const scene = new THREE.Scene();
@@ -286,7 +292,7 @@ const ContactCustomPage = () => {
 
         // Additional Orbiting Shapes
         const numOrbits = 3;
-        const orbitingObjects = [];
+        const orbitingObjects:any = [];
         const baseOrbitRadius = 3.5;
         const shapes = [
             new THREE.TorusGeometry(0.5, 0.2, 16, 50),
@@ -365,7 +371,7 @@ const ContactCustomPage = () => {
             particlesMesh.rotation.y = -0.01 * elapsedTime;
 
             // Animate orbiting objects
-            orbitingObjects.forEach(obj => {
+            orbitingObjects.forEach((obj:any) => {
                 obj.angle += obj.speed;
                 obj.mesh.position.x = Math.cos(obj.angle) * obj.radius;
                 obj.mesh.position.z = Math.sin(obj.angle) * obj.radius;
@@ -415,7 +421,7 @@ const ContactCustomPage = () => {
         };
     }, []);
 
-    async function onSubmitHandler(data) {
+    async function onSubmitHandler(data:any) {
         setIsLoading(true);
         setIsSuccess(false);
         setIsError(false);
@@ -453,7 +459,7 @@ const ContactCustomPage = () => {
                         <div className="p-8 sm:p-12 bg-black/30 relative flex flex-col justify-between">
                             <div>
                                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent leading-tight">
-                                    Let's Connect
+                                    Let&apos;s Connect
                                 </h1>
                                 <p className="text-gray-300 text-lg mb-8 max-w-md">
                                     Have a project in mind or just want to say hello? Fill out the form or reach out via the links below.
@@ -491,7 +497,7 @@ const ContactCustomPage = () => {
                                 <div className="relative group">
                                     <textarea
                                         id="message"
-                                        rows="5"
+                                        rows={5}
                                         className="peer w-full bg-transparent border-b-2 border-gray-600 focus:border-purple-500 text-white placeholder-transparent pt-4 pb-2 outline-none transition-colors resize-y"
                                         placeholder="Your Message"
                                         {...register('message', { required: true })}

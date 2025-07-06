@@ -8,8 +8,8 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 
 
 // Enhanced ProjectCard with 3D Tilt Effect
-const ProjectCard = ({ project, index }) => {
-  const cardRef = useRef(null);
+const ProjectCard = ({ project, index }:any) => {
+  const cardRef = useRef<any>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index }) => {
     return () => observer.disconnect();
   }, []);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e:any) => {
     if (!cardRef.current) return;
     const { left, top, width, height } = cardRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
@@ -76,7 +76,7 @@ const ProjectCard = ({ project, index }) => {
                  </div>
                </div>
                <div className="flex flex-wrap gap-2">
-                 {project.tags.map((tag, i) => (
+                 {project.tags.map((tag:any, i:any) => (
                    <span
                      key={i}
                      className="px-3 py-1 bg-indigo-500/20 text-indigo-300 text-xs rounded-full border border-indigo-500/30 hover:bg-indigo-500/40 hover:border-indigo-400/50 transition-colors duration-300"
@@ -96,7 +96,7 @@ const ProjectCard = ({ project, index }) => {
              <div className="mb-8">
                <h4 className="text-white font-semibold mb-3 text-lg">Tech Stack:</h4>
                <div className="flex flex-wrap gap-2">
-                 {project.techStack.map((tech, i) => (
+                 {project.techStack.map((tech:any, i:any) => (
                    <span
                      key={i}
                      className="px-3 py-2 bg-slate-800/50 text-cyan-300 text-sm rounded-xl border border-cyan-500/30 hover:bg-slate-700/50 hover:border-cyan-400/50 transition-colors duration-300"
@@ -111,7 +111,7 @@ const ProjectCard = ({ project, index }) => {
              <div className="mb-8">
                <h4 className="text-white font-semibold mb-3 text-lg">Key Features:</h4>
                <ul className="space-y-2">
-                 {project.features.map((feature, i) => (
+                 {project.features.map((feature:any, i:any) => (
                    <li key={i} className="flex items-center gap-3 text-gray-300">
                      <div className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
                      {feature}
@@ -153,7 +153,7 @@ const ProjectCard = ({ project, index }) => {
 
 const ProjectsPage = () => {
   const mountRef = useRef(null);
-  const animationRef = useRef(null);
+  const animationRef = useRef<any>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -231,7 +231,7 @@ const ProjectsPage = () => {
   // Enhanced Three.js Scene Setup
   useEffect(() => {
     if (!mountRef.current) return;
-    const mount = mountRef.current;
+    const mount :any = mountRef.current;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, mount.clientWidth / mount.clientHeight, 0.1, 1000);
@@ -248,7 +248,7 @@ const ProjectsPage = () => {
 
     // Mouse position
     const mouse = new THREE.Vector2(-10, -10); // Start off-screen
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event:any) => {
         mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
         mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
     };
@@ -262,7 +262,7 @@ const ProjectsPage = () => {
     scene.add(ambientLight);
 
     // Crystalline Shapes
-    const shapes = [];
+    const shapes : any = [];
     const geo1 = new THREE.IcosahedronGeometry(1, 0);
     const mat1 = new THREE.MeshStandardMaterial({
         color: 0x8b5cf6,
@@ -316,7 +316,7 @@ const ProjectsPage = () => {
       animationRef.current = requestAnimationFrame(animate);
 
       // Animate shapes
-      shapes.forEach(shape => {
+      shapes.forEach((shape:any) => {
           shape.rotation.x += 0.001;
           shape.rotation.y += 0.002;
       });
@@ -354,12 +354,12 @@ const ProjectsPage = () => {
             mount.removeChild(renderer.domElement);
         }
         // Dispose of Three.js objects to prevent memory leaks
-        scene.traverse(object => {
+        scene.traverse((object:any) => {
           if (object.isMesh || object.isPoints) {
             if (object.geometry) object.geometry.dispose();
             if (object.material) {
               if (Array.isArray(object.material)) {
-                object.material.forEach(material => material.dispose());
+                object.material.forEach((material:any) => material.dispose());
               } else {
                 object.material.dispose();
               }
@@ -467,7 +467,7 @@ const ProjectsPage = () => {
               Ready to Create Something Amazing?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Let's collaborate on your next project and bring your vision to life with cutting-edge technology and innovative design.
+              Let&apos;s collaborate on your next project and bring your vision to life with cutting-edge technology and innovative design.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

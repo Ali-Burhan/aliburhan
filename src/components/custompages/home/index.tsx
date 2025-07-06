@@ -143,7 +143,7 @@ export default function Home() {
                 {/* Greeting */}
                 <div className="mb-6">
                   <p className="text-indigo-400 font-medium text-lg mb-2 tracking-wide">
-                    Hello, I'm Ali Burhan
+                    Hello, I&apos;m Ali Burhan
                   </p>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight">
                     <TypeAnimation

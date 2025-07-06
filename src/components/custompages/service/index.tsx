@@ -3,13 +3,19 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as THREE from 'three';
+//@ts-ignore
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; // For user interaction
+//@ts-ignore
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
+//@ts-ignore
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
+//@ts-ignore
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
+//@ts-ignore
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass'; // Optional, for a dynamic glitch effect
-import { VignetteShader } from 'three/examples/jsm/shaders/VignetteShader'; // For vignette effect
+//@ts-ignore
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass';
+import { VignetteShader } from 'three/examples/jsm/Addons.js';
 
 export default function ServiceCustomPage() {
     const mountRef = useRef<HTMLDivElement>(null);
@@ -178,7 +184,7 @@ export default function ServiceCustomPage() {
         glitchPass.curF = 0; // Control frequency manually or let it be random
         // composer.addPass(glitchPass); // Uncomment to enable glitch effect
 
-        const vignettePass = new ShaderPass(VignetteShader);
+        const vignettePass : any = new ShaderPass(VignetteShader);
         vignettePass.uniforms["darkness"].value = 1.0; // Adjust for more or less darkness
         vignettePass.uniforms["offset"].value = 1.0;
         composer.addPass(vignettePass);
@@ -213,6 +219,7 @@ export default function ServiceCustomPage() {
             composer.render(); // Render with post-processing
         };
         animateRef.current = animate;
+        //@ts-ignore
         animate();
 
         return () => {
